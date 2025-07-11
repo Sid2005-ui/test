@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.welcome {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.welcome h1 {
+    font-size: 3rem;
+    color: #dcdeee;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.wrapper {
+    width: 700px;
+    padding: 35px;
+    background-color: #e5e4db;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.wrapper.content-box {
+    padding: 13px 20px 0;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+}
+
+.wrapper .input-field {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+}
+
+.content-box .content {
+    margin-top: 17px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-box .result-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 140px);
+}
+
+.result-details li {
+    display: flex;
+    height: 20px;
+    list-style: none;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.content button {
+    width: 110px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: rgb(206, 129, 82);
+    font-size: 16px;
+    padding: 8px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+h1 {
+            font-size: 3rem;
+            color: #333;
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+.content button:active {
+    transform: scale(0.97);
+}
+
+.typing-text p span {
+    position: relative;
+}
+
+.typing-text p span.active {
+    color: rgb(121, 129, 222);
+}
+
+.typing-text p span.incorrect {
+    color: rgb(226, 67, 67);
+    outline: 1px solid #fff;
+    background: #d59fa8;
+    border-radius: 4px;
+}
+
+::selection {
+    color: #fff;
+    background: rgb(174, 25, 25);
+}
