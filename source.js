@@ -14,12 +14,15 @@ let charIndex = 0;
 let mistake = 0;
 let istyping = false;
 function loadparagraph(){
-    const paragraph= ["JavaScript is a scripting or programming language that allows you to implement complex features on web pages ",
- "It is the third layer of the layer cake of standard web technologies, alongside HTML and CSS",
- "JavaScript is used to create interactive webpages and can be used for both client-side and server-side development.",
- "It is a versatile, dynamically typed programming language that supports multiple paradigms such as imperative, functional, and object-oriented programming.",
- "JavaScript can be added directly to a web page using script tags and giving them the type attribute text/javascript.",
- "It is also possible to add JavaScript to a page as a separate header file with the extension .js."];
+    const paragraph= [
+  "JavaScript is a powerful, flexible programming language that empowers developers to design rich web interfaces, build dynamic applications, and control browser behavior in real time. it is very powerful tool which one should study ",
+  "JavaScript is a high-level, dynamic, and interpreted programming language that has evolved beyond its original role as a browser script into a core technology for both client-side and server-side development using platforms like Node.js.",
+  "Through innovations such as Web APIs, ES6 modules, and full-stack JavaScript frameworks like Express, MongoDB, and Next.js, JavaScript has redefined how developers build and maintain scalable, unified web applications.",
+  "JavaScript is widely used to create responsive and interactive web experiences and serves as a core tool for both front-end user interface design and back-end server logic implementation.",
+  "As a dynamically typed language, JavaScript supports multiple programming paradigms—including imperative, object-oriented, and functional approaches—making it highly adaptable across diverse coding environments.",
+  "JavaScript can be added directly to web pages using the <script> tag with the type attribute set to text/javascript, allowing embedded scripts to manipulate the DOM and respond to user actions instantly.",
+  "It is also common practice to link JavaScript files externally using the .js extension, enabling modular script management, reusable components, and improved separation between structure, style, and behavior."
+];
 const randomIndex = Math.floor(Math.random()*paragraph.length);
 typingtext.innerHTML='';
 for(const char of paragraph[randomIndex]){
